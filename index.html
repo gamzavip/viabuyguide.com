@@ -109,26 +109,21 @@
 <body class="antialiased">
 
     <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-md shadow-sm z-50 border-b border-slate-200">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-            <div class="font-bold text-xl text-blue-700 tracking-tight">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="/" class="font-bold text-xl text-blue-700 tracking-tight hover:opacity-80 transition-opacity">
                 안전건강가이드
-            </div>
+            </a>
             
-            <!-- Desktop Menu -->
-            <div class="hidden md:flex space-x-8">
-                <a href="#guide-start" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">구매가이드</a>
-                <a href="#precautions" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">주의사항</a>
-                <a href="#faq" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">FAQ</a>
-                <a href="#reviews" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">후기</a>
-            </div>
+            <div class="flex items-center">
+                <!-- Desktop Menu (Far Right Aligned) -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#guide-start" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">구매가이드</a>
+                    <a href="#precautions" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">주의사항</a>
+                    <a href="#faq" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">FAQ</a>
+                    <a href="#reviews" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">후기</a>
+                    <a href="#order-guide" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">주문안내</a>
+                </div>
 
-            <div class="flex items-center gap-3">
-                <!-- Primary CTA Button (Header) -->
-                <a href="https://viacia.xyz" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-4 md:px-5 py-2 md:py-2.5 text-xs md:text-sm font-bold text-white transition-all bg-blue-600 rounded-lg hover:bg-blue-700 hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-blue-300">
-                    주문사이트 이동
-                    <svg class="w-4 h-4 ml-1 md:ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                </a>
-                
                 <!-- Mobile Menu Toggle Button -->
                 <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-600 focus:outline-none focus:ring-2 focus:ring-blue-300 rounded-lg transition-colors">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -145,12 +140,13 @@
                 <a href="#precautions" class="mobile-link text-slate-700 font-medium hover:text-blue-600 block px-2">주의사항</a>
                 <a href="#faq" class="mobile-link text-slate-700 font-medium hover:text-blue-600 block px-2">FAQ</a>
                 <a href="#reviews" class="mobile-link text-slate-700 font-medium hover:text-blue-600 block px-2">후기</a>
+                <a href="#order-guide" class="mobile-link text-slate-700 font-medium hover:text-blue-600 block px-2">주문안내</a>
             </div>
         </div>
     </nav>
 
     <header class="pt-28 pb-16 bg-gradient-to-b from-blue-50 to-slate-50 border-b border-slate-200">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 text-center">
             <h1 class="text-3xl sm:text-4xl md:text-5xl font-black mb-6 leading-tight text-slate-900">
                 올바른 <span class="text-gradient">비아그라 / 시알리스 구매</span><br />
                 건강을 위한 첫걸음입니다.
@@ -161,7 +157,7 @@
         </div>
     </header>
 
-    <main class="max-w-4xl mx-auto px-4 sm:px-6 py-12" id="guide-start">
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 py-12" id="guide-start">
         
         <article class="content-card">
             <h2 class="text-2xl font-bold text-slate-800 mb-4 border-b-2 border-blue-500 pb-2 inline-block">비아그라 구매</h2>
@@ -178,11 +174,34 @@
             </div>
         </article>
 
+        <!-- Order Guide Section Moved to Middle Position -->
+        <article id="order-guide" class="content-card bg-gradient-to-br from-blue-600 to-indigo-700 text-white shadow-xl border-none">
+            <div class="p-2 sm:p-4 text-center md:text-left md:flex md:items-center md:justify-between gap-6">
+                <div class="mb-6 md:mb-0 max-w-2xl">
+                    <span class="inline-block px-3 py-1 bg-white/20 text-blue-100 text-xs font-semibold rounded-full mb-3 backdrop-blur-sm">
+                        안전 정품 안내
+                    </span>
+                    <h2 class="text-2xl sm:text-3xl font-bold mb-3 text-white">주문안내 및 공식 사이트 이동</h2>
+                    <p class="text-blue-100 text-sm sm:text-base leading-relaxed">
+                        안전하고 신뢰할 수 있는 비아그라 및 시알리스 정품 처방 안내를 도와드리는 공식 제휴 페이지로 이동합니다. 간단한 절차를 통해 안전하게 상담 및 안내를 받아보실 수 있습니다.
+                    </p>
+                </div>
+                <div class="flex-shrink-0 text-center md:text-right">
+                    <a href="https://viacia.xyz" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-6 py-3.5 text-base font-bold text-blue-700 bg-white hover:bg-blue-50 rounded-xl shadow-lg transition-all transform hover:-translate-y-0.5 focus:outline-none focus:ring-4 focus:ring-white/50">
+                        주문사이트 이동
+                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </article>
+
         <article class="content-card">
             <h2 class="text-2xl font-bold text-slate-800 mb-4 border-b-2 border-blue-500 pb-2 inline-block">비아그라 구매 전 먼저 알아야 할 점</h2>
             
             <figure class="my-6">
-                <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80" alt="의사와 상담하는 환자 모습 - 비아그라 구매 전 건강 상태 확인" class="w-full h-auto rounded-xl shadow-sm object-cover max-h-[400px]" onerror="this.onerror=null; this.src='https://placehold.co/800x400/f8fafc/1e293b?text=Medical+Consultation';">
+                <img src="/img/Gemini_Generated_Image_unod9cunod9cunod.webp" alt="의사와 상담하는 환자 모습 - 비아그라 구매 전 건강 상태 확인" class="w-full h-auto rounded-xl shadow-sm object-cover max-h-[400px]" onerror="this.onerror=null; this.src='https://placehold.co/800x400/f8fafc/1e293b?text=Medical+Consultation';">
                 <figcaption class="text-center text-sm text-slate-500 mt-2">안전한 의약품 처방을 위해 진료 및 상담을 진행하는 모습</figcaption>
             </figure>
 
@@ -198,7 +217,7 @@
             <h2 class="text-2xl font-bold text-slate-800 mb-4 border-b-2 border-blue-500 pb-2 inline-block">온라인 구매가 위험한 이유와 처방의 중요성</h2>
             
             <figure class="my-6">
-                <img src="https://images.unsplash.com/photo-1585435557343-3b092031a831?auto=format&fit=crop&w=800&q=80" alt="약국에서 조제되는 정품 의약품 - 안전한 비아그라 구매 확인법" class="w-full h-auto rounded-xl shadow-sm object-cover max-h-[400px]" onerror="this.onerror=null; this.src='https://placehold.co/800x400/f8fafc/1e293b?text=Authentic+Pharmacy';">
+                <img src="/img/Gemini_Generated_Image_64jjxa64jjxa64jj.webp" alt="약국에서 조제되는 정품 의약품 - 안전한 비아그라 구매 확인법" class="w-full h-auto rounded-xl shadow-sm object-cover max-h-[400px]" onerror="this.onerror=null; this.src='https://placehold.co/800x400/f8fafc/1e293b?text=Authentic+Pharmacy';">
                 <figcaption class="text-center text-sm text-slate-500 mt-2">공식 약국을 통한 안전한 의약품 조제와 복약지도</figcaption>
             </figure>
 
@@ -360,32 +379,46 @@
     </main>
 
     <footer class="bg-slate-900 text-slate-300 py-12 border-t border-slate-800">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6">
-            <div class="grid md:grid-cols-2 gap-8 mb-8">
-                <div>
-                    <h4 class="text-white text-lg font-bold mb-4">비아그라 구매 / 시알리스 구매</h4>
-                    <ul class="space-y-2 text-sm text-slate-400">
-                        <li><span class="text-slate-500 w-24 inline-block">운영자</span> 김비아</li>
-                        <li><span class="text-slate-500 w-24 inline-block">대표자</span> 김비아</li>
-                        <li><span class="text-slate-500 w-24 inline-block">사업자등록번호</span> 92330106MA2CGMP8A (CN)</li>
-                        <li><span class="text-slate-500 w-24 inline-block">이메일</span> viagra@gmail.com</li>
-                        <li><span class="text-slate-500 w-24 inline-block">운영시간</span> 연중무휴 24시간 상담 가능</li>
-                    </ul>
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <div class="bg-slate-800/80 rounded-2xl p-6 md:p-8 mb-8 border border-slate-700/60 shadow-inner">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-6 pb-6 border-b border-slate-700/80">
+                    <div>
+                        <h4 class="text-white text-lg md:text-xl font-bold flex items-center gap-2 mb-1">
+                            <span class="w-2.5 h-2.5 rounded-full bg-blue-500 inline-block"></span>
+                            비아그라 구매 / 시알리스 구매 안내
+                        </h4>
+                        <p class="text-xs md:text-sm text-slate-400">올바른 정품 정보 및 안전한 의약품 처방 통합 가이드</p>
+                    </div>
+                    <div class="flex items-center gap-3 text-xs md:text-sm text-slate-400">
+                        <a href="/terms" class="hover:text-slate-200 transition-colors">이용약관</a>
+                        <span class="text-slate-600">|</span>
+                        <a href="/privacy" class="hover:text-slate-200 font-semibold text-slate-300 transition-colors">개인정보처리방침</a>
+                    </div>
                 </div>
-                <div class="flex flex-col justify-center items-start md:items-end">
-                    <p class="text-sm text-slate-400 mb-4 text-left md:text-right leading-relaxed">
-                        본 안내 사이트는 건강하고 안전한<br class="hidden md:block" /> 의약품 정보를 제공하기 위해 운영됩니다.
-                    </p>
-                    <a href="https://viacia.xyz" target="_blank" rel="noopener noreferrer" class="px-6 py-2.5 bg-slate-800 hover:bg-blue-600 border border-slate-700 hover:border-blue-600 text-white rounded-lg transition-all duration-200 text-sm font-medium shadow-sm flex items-center">
-                        주문사이트 이동(새창)
-                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                    </a>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 text-xs text-slate-400">
+                    <div>
+                        <span class="text-slate-500 font-medium block mb-1">운영자 / 대표</span>
+                        <span class="text-slate-200 font-semibold">김비아</span>
+                    </div>
+                    <div>
+                        <span class="text-slate-500 font-medium block mb-1">사업자등록번호</span>
+                        <span class="text-slate-200 font-semibold">92330106MA2CGMP8A (CN)</span>
+                    </div>
+                    <div>
+                        <span class="text-slate-500 font-medium block mb-1">이메일 문의</span>
+                        <span class="text-slate-200 font-semibold">viagra@gmail.com</span>
+                    </div>
+                    <div>
+                        <span class="text-slate-500 font-medium block mb-1">상담 운영시간</span>
+                        <span class="text-slate-200 font-semibold">연중무휴 24시간 상담</span>
+                    </div>
                 </div>
             </div>
             
-            <div class="border-t border-slate-800 pt-8 text-center text-xs text-slate-500">
-                <p class="mb-2">Copyright © 2026 [비아그라]. All Rights Reserved.</p>
-                <p>본 사이트에 게시된 모든 콘텐츠(텍스트, 이미지, 디자인 등)는 저작권법에 의해 보호받으며, 무단 복제, 전재, 재배포를 금지합니다.</p>
+            <div class="text-center text-xs text-slate-500 space-y-2">
+                <p>Copyright © 2026 [비아그라]. All Rights Reserved.</p>
+                <p class="text-[11px] text-slate-600 leading-normal max-w-3xl mx-auto">본 사이트에 게시된 모든 콘텐츠(텍스트, 이미지, 디자인 등)는 저작권법에 의해 보호받으며, 무단 복제, 전재, 재배포를 금지합니다.</p>
             </div>
         </div>
     </footer>
